@@ -1,15 +1,24 @@
 @media screen and (max-width:600px) {
-
-    .tourmaster-tour-field  input, select, button{
+    body{
         width: 100%;
-        margin-top: 10px;
+        padding: 10px;
     }
+    .text-box{
+        width: 100%;
+    }
+    .tourmaster-tour-field{
+        flex-direction: column;
+    }
+
+
     .banner .text-box{
+        width: calc(100% - 20px);
         position: absolute;
-        left: 15%;
+        left: 10px;
         top: 15%;
+        padding: 10px;
     }
-    .banner div{
+    .banner > div{
         margin-top: 15%;
     }
     .banner .img img{
@@ -18,17 +27,24 @@
 
     }
     .popular-tours{
-        /* height: 550px; */
         display: block;
     }
-    .popular-tours div{
+    .popular-tours > div{
+        height: 100%;
         width: 100%;
         margin: 10px;
     }
-    .side-tex-box .btn {
-        width: 50%;
+.Newsletter-img-text {
+    width: 160px !important;
+    height: 70px !important;
+}
+    .side-text-box button{
+        width: 100% !important;
         padding: 1% 2%;
         }
+        .side-text-box  h3, .side-text-box p, .side-text-box ul, .side-text-box button{
+            margin-top: 2%;
+            }
     .Newsletter{
         display: block;
     }
@@ -41,12 +57,22 @@
     .third-div{
         grid-template-columns: 1fr;
     }
-    /* .text-box{
-        width: 100%;
-    } */
+.card-box-1, .card-box-2{
+    display: block;
+}
+.card-box-2 .card{
+    margin-top: 40px;
+    width: 100%;
+}
+.card-box-1 .card{
+    margin-top: 40px;
+}
     .Newsletter div{
         width: 100%;
         margin-top: 10px;
         margin: auto;
     }
+    footer .text-box{
+        width: 100%;
+       }
 }
