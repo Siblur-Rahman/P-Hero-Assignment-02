@@ -1,0 +1,9 @@
+@media screen and (max-width:600px) {
+    .Newsletter{
+        display: block;
+    }
+    .Newsletter div{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
