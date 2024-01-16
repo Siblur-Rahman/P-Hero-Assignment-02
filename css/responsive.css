@@ -1,9 +1,52 @@
 @media screen and (max-width:600px) {
+
+    .tourmaster-tour-field  input, select, button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .banner .text-box{
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    }
+    .banner div{
+        margin-top: 15%;
+    }
+    .banner .img img{
+        width: 100%;
+        height: 600px;
+
+    }
+    .popular-tours{
+        /* height: 550px; */
+        display: block;
+    }
+    .popular-tours div{
+        width: 100%;
+        margin: 10px;
+    }
+    .side-tex-box .btn {
+        width: 50%;
+        padding: 1% 2%;
+        }
     .Newsletter{
         display: block;
     }
+    .first-div, .second-div{
+        flex-direction: column;
+    }
+    .first-div div, .second-div div{
+        width: 100%;
+    }
+    .third-div{
+        grid-template-columns: 1fr;
+    }
+    /* .text-box{
+        width: 100%;
+    } */
     .Newsletter div{
         width: 100%;
         margin-top: 10px;
+        margin: auto;
     }
 }
