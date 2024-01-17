@@ -1,3 +1,21 @@
+  /* 
+  .first-div .item-1, .first-div .item-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    border-radius: 10px;
+}
+.first-div .item-1{
+    background-image: url('../images/Rectangle 5.png');
+}
+.first-div .item-2{
+    background-image: url('../images/Rectangle 8.png');
+}
+  */
   @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
 *{
     margin: 0;
@@ -6,8 +24,9 @@
     font-family: 'Mulish', sans-serif;
 }
 body{
-    min-width: 100%;
+    width: 992px;
     padding: 20px;
+    margin: auto;
 }
 /* shared class & elements */
 hr{
@@ -50,20 +69,19 @@ hr{
     width: 100%;
     position: relative;
     background-image: url('../images/Group 13 (1) (1).png');
+    background-position: center;
     background-size: cover;
 }
-.banner{}
 .banner .text-box{
     position: absolute;
     left: 15%;
     top: 15%;
 }
 .tourmaster-tour-field{
-    width: 95%;
     display: flex;
     justify-content: center;
     background-color: rgba(245, 243, 241, 0.5);
-    gap: 10px;
+    gap: 5px;
     padding: 10px 50px;
 }
 .tourmaster-tour-field  input, .tourmaster-tour-field select{
@@ -71,19 +89,19 @@ hr{
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 1.5rem;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     border: none;
 }
-.tourmaster-tour-field button{
-    width: 100%;
+.tourmaster-tour-field .btn{
+    width: 110%;
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 1.5rem;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 5px 5px 5px !important;
     border-radius: 8px;
     border: none;
-    text-align: left;
+    text-align: center;
 }
 /* popular-tours section */
 .popular-tours{
@@ -91,8 +109,11 @@ hr{
     display: flex;
     gap: 10px;
 }
-.popular-tours>div{
-    max-height: 600px;
+.popular-tours > div{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
     width: calc((100% - 10px) / 2);
     /* margin: 10px; */
 }
@@ -100,19 +121,15 @@ hr{
     width: 100%;
     height: 100%;
 }
-.side-text-box{
-    padding-top: 2%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+.side-text-box li:last-child{
+    margin-top: 10px;
 }
 
 .side-text-box  h3, .side-text-box p, .side-text-box ul{
-padding-top: 5%;
+    height: 200px;
 }
 .side-text-box button{
-    margin-top: 3%;
+    margin-top: 10px;
     width: 50%;
 }
 .side-text-box ul {
@@ -124,16 +141,45 @@ padding-top: 5%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.first-div .heading{
+    /* height: 100%; */
+}
+.item-1, .item-2{
+    height: 400px;
+}
+.first-div .item-1{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Rectangle 5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+}
+.first-div .item-2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Rectangle 8.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+}
 .first-div{
     margin-top: 10px;
-    /* height: 400px; */
     display: flex;
     gap: 5px;
 }
 .first-div div{
     width: calc((100% - 5px) / 2);
 }
-.first-div div img{
+.first-div div{
     width: 100%;
     height: 100%;
 }
@@ -164,6 +210,7 @@ padding-top: 5%;
 /* choose section */
 .card{
     padding: 10px;
+    border-radius: 8px;
 }
 .card-box-1{
     display: grid;
